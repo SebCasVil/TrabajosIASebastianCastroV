@@ -127,7 +127,7 @@ function datosDeEntrenamiento(param_entrada){
     // CUATRO NEURONAS
     var salto=Math.round( nnSalida[0]*100 )
     var derecha=Math.round( nnSalida[1]*100 )
-    console.log("Salto %: "+ salto + ", Derecha %: " + derecha )
+    console.log("Salto %: "+ nnSalida[0] + ", Derecha %: " + nnSalida[1] )
     return [ nnSalida[0]>=0.5, nnSalida[1]>=0.5]
 
 }
